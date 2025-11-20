@@ -1,0 +1,117 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f0f2f5 0%, #e0e4e8 100%);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    max-width: 450px;
+    width: 90%;
+    text-align: center;
+}
+
+h1 {
+    color: #e74c3c; /* Merah cerah */
+    font-size: 2.2em;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+h2, h3 {
+    color: #3498db; /* Biru */
+    margin-top: 0;
+    border-bottom: 2px solid #bdc3c7;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Timer Styling */
+#timerDisplay {
+    font-size: 4.5em;
+    font-weight: 800;
+    color: #2ecc71; /* Hijau Fokus */
+    margin: 10px 0;
+    letter-spacing: 2px;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+#setTaskButton { background-color: #f39c12; }
+#setTaskButton:hover { background-color: #e67e22; }
+
+#startButton { background-color: #2ecc71; }
+#startButton:hover { background-color: #27ae60; }
+
+#pauseButton { background-color: #e67e22; }
+#pauseButton:hover { background-color: #d35400; }
+
+#resetButton { background-color: #95a5a6; }
+
+button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+/* Quotes */
+#genzQuote {
+    font-style: italic;
+    color: #2c3e50;
+    font-size: 1.1em;
+    min-height: 30px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* White Noise */
+#toggleNoiseButton {
+    background-color: #3498db;
+    margin-right: 10px;
+}
+#volumeControl {
+    vertical-align: middle;
+}
+
+.small-text {
+    font-size: 0.9em;
+    margin-top: 10px;
+    color: #7f8c8d;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procrastination Killer | Fokus Maksimal</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <div class="container">
+        <h1>🚀 Procrastination Killer 🚀</h1>
+        <p class="subtitle">Semangat Vibe ON! Fokus Maksimal.</p>
+
+        <div class="card focus-task">
+            <h2>Fokus Sekarang:</h2>
+            <input type="text" id="taskInput" placeholder="Satu tugas paling penting." required>
+            <button id="setTaskButton">Tentukan Fokus</button>
+            <p id="currentTask" class="current-task-text">Tugas harian menantimu!</p>
+        </div>
+
+        <div class="card timer-section">
+            <h3>⏰ Pomodoro Time (25 Menit)</h3>
+            <div id="timerDisplay">25:00</div>
+            <div class="timer-controls">
+                <button id="startButton">Mulai Sesi </button>
+                <button id="pauseButton" disabled>Jeda Dulu</button>
+                <button id="resetButton">Setel Ulang</button>
+            </div>
+            <p class="small-text" id="musicStatus">Klik Mulai untuk Timer berjalan, lalu putar musik semangat Anda!</p>
+        </div>
+
+        <div class="card quote-section">
+            <h3>💡 Gen Z Quote Vibe Check</h3>
+            <p id="genzQuote">"Vibes lagi on!"</p>
+        </div>
+
+        <div class="card media-section">
+            <h3>🎧 White Noise Alami</h3>
+            
+            <div class="media-control">
+                <audio id="focusNoise" loop preload="auto">
+                    <source src="Taylor Swift - Style [-CmadmM5cOk].MP3" type="audio/mp3"> 
+                    Browser Anda tidak mendukung elemen audio.
+                </audio>
+                <button id="toggleNoiseButton">Play White Noise</button>
+                <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="0.5" title="Atur Volume White Noise">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
